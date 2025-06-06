@@ -41,6 +41,9 @@ clinic.post("/", function(req, res)
 
 // As you send to update kidney(POST), you will see changes in the get request when you try to get those details !!
 
+
+
+// PUT converts unhealthy kidneys to healthy ones !!
 clinic.put("/", function(req, res)
 {
     for(let i = 0; i<users[0].kidneys.length; i++)
@@ -49,6 +52,7 @@ clinic.put("/", function(req, res)
     }
     res.json({});
 })
+
 
 function isThereAtLeastOnePoorKidney ()
 {
@@ -63,6 +67,7 @@ function isThereAtLeastOnePoorKidney ()
 
     return atLeastOneBad;
 }
+
 
 // Delete the unhealthy kidney !!
 clinic.delete("/", function(req,res)
