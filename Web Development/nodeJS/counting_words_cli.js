@@ -16,7 +16,7 @@ program
         return;
       }
 
-      // Match all non-whitespace sequences as words
+      // for koop bhi use kr skte hain..! but this is more efficient
       const words = data.trim().split(/\s+/);
       const wordCount = words.filter(Boolean).length;
 
